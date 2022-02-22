@@ -15,3 +15,5 @@ python src/tools/clang/scripts/update.py
 rm -f webrtc
 
 ln -s src webrtc
+
+cd src/ && git apply < ../../../../../scripts/null-video-decoder.patch && cd -
